@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <button onclick="tg.sendData(JSON.stringify({test: 'ok'}))">ОТПРАВИТЬ</button>
+
+    <script>
+        const tg = Telegram.WebApp;
+        tg.expand();
+        tg.ready();
+    </script>
+</body>
+</html>
